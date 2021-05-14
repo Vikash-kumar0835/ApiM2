@@ -7,9 +7,10 @@
 		"start": "nodemon myapp.js"
 	},
 	"dependencies": {
-		"express": "^5.0.0-alpha.2",
 		"cors": "^2.8.1",
-		"dotenv": "^8.2.0"
+		"dotenv": "^8.2.0",
+		"express": "^5.0.0-alpha.2",
+		"localtunnel": "^2.0.1"
 	},
 	"repository": {
 		"type": "git",
