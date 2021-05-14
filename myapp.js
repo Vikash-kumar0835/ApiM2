@@ -15,12 +15,13 @@ app.use(cors({optionsSuccessStatus: 200}));  // some legacy browsers choke on 20
 app.use(express.static('public'));
 
 
+app.get('/api/whoami',function(req,res){
+  var ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
+  var ln= req.headers["accept-language"];
+  var st= req.headers['user-agent'];
+  res.json({ipaddress:ip , language:ln , software:st});
 
-
-
-
-
-
+});
 
 // listen for requests :)
 var listener = app.listen(process.env.PORT, function () {
