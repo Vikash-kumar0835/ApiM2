@@ -23,10 +23,7 @@ app.get('/api/whoami',function(req,res){
 
 });
 
-// listen for requests :)
-var listener = app.listen(process.env.PORT, function () {
-  console.log('Your app is listening on port ' + listener.address().port);
-});
+app.listen(3000,()=>console.log("server started on port 3000...!"));
 
 
 
