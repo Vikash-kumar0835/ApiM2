@@ -4,7 +4,7 @@
 	"description": "API project for freeCodeCamp",
 	"main": "myapp.js",
 	"scripts": {
-		"start": "nodemon myapp.js"
+		"start": "node myapp.js"
 	},
 	"dependencies": {
 		"cors": "^2.8.1",
